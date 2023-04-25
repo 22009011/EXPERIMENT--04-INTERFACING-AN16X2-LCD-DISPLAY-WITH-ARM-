@@ -181,7 +181,8 @@ https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
  
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- 
+ ![Screenshot 2023-04-25 at 11-42-13 Yuvaranithulasingam_EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-](https://user-images.githubusercontent.com/118343461/234189898-3ec31e3c-6cc8-467c-a7ef-9382d2bcb47d.png)
+
  
 ## Result :
 Interfacing a digital output and digital input  with ARM microcontroller are simulated in proteus and the results are verified.
