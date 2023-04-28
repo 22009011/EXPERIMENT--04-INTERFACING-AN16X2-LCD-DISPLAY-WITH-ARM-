@@ -203,7 +203,7 @@ int main(void)
 
 
 
-## Output screen shots of proteus  :
+## Output screen shots of proteus  : 
  ![Screenshot 2023-04-28 at 14-45-03 (3) WhatsApp](https://user-images.githubusercontent.com/118343461/235107841-ad5d17f1-985b-471e-9946-223cbe19b13f.png)
 
  
