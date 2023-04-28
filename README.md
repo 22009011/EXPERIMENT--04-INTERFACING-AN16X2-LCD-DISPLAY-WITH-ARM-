@@ -173,12 +173,39 @@ https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
 
 
 ## STM 32 CUBE PROGRAM :
+Developed by : THANJIYAPPAN.K
+Register no.:212222240108
 
+#include "main.h"
+#include"lcd.h"
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+int main(void)
+{
+  HAL_Init();
+  SystemClock_Config();
+  MX_GPIO_Init();
+    Lcd_PortType ports[] = { GPIOA, GPIOA, GPIOA, GPIOA };
+    Lcd_PinType pins[] = {GPIO_PIN_3, GPIO_PIN_2, GPIO_PIN_1, GPIO_PIN_0};
+    Lcd_HandleTypeDef lcd;
+    lcd = Lcd_create(ports, pins, GPIOB, GPIO_PIN_0, GPIOB, GPIO_PIN_1, LCD_4_BIT_MODE);
+    Lcd_cursor(&lcd, 0,1);
+    Lcd_string(&lcd, "Meena S");
+    Lcd_cursor(&lcd, 1,1);
+  while (1)
+  {
+	  for ( int x = 1; x <= 200 ; x++ )
+	  { Lcd_cursor(&lcd, 2,7);
+	  Lcd_int(&lcd, x);
+	  HAL_Delay (1000); }
+  }
+}
 
 
 
 ## Output screen shots of proteus  :
- 
+ ![Screenshot 2023-04-28 at 14-45-03 (3) WhatsApp](https://user-images.githubusercontent.com/118343461/235107841-ad5d17f1-985b-471e-9946-223cbe19b13f.png)
+
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
  ![Screenshot 2023-04-25 at 11-42-13 Yuvaranithulasingam_EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-](https://user-images.githubusercontent.com/118343461/234189898-3ec31e3c-6cc8-467c-a7ef-9382d2bcb47d.png)
